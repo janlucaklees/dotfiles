@@ -17,6 +17,7 @@ ZSH=/usr/share/oh-my-zsh/
 ### ZSH_THEME="fino"
 ### ZSH_THEME="jonathan"
 ## ZSH_THEME="bira"
+## ZSH_THEME="sonicradish"
 ## ZSH_THEME="muse"
 ZSH_THEME="random"
 
