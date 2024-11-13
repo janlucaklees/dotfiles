@@ -5,7 +5,7 @@ passwd jlk
 
 echo "Setting up doas"
 pacman -S --needed --noconfirm doas
-echo 'permit persist :wheel' >> /etc/doas.conf
+echo 'permit persist setenv {PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin} :wheel' >> /etc/doas.conf
 
 echo "Setting up yay"
 pacman -S --needed --noconfirm fakeroot
