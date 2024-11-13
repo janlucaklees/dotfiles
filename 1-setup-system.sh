@@ -35,4 +35,5 @@ git config --global user.email
 git config --global user.name "Jan-Luca Klees"
 git config --global user.name
 
-echo "Add nouveau to MODULES in mkinitcpio.conf"
+# TODO: Setup Graphics drivers
+# TODO: Install etckeeper
