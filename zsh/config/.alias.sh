@@ -6,7 +6,7 @@ alias cap='bat --plain'
 alias ls='eza --group-directories-first'
 alias diff='icdiff'
 alias ll='ls -l'
-alias la='ll -la'
+alias la='ll -lah'
 alias grep='rg'
 
 # Systemd
