@@ -28,7 +28,7 @@ gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 27
 gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-automatic true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-last-coordinates "(51.9, 8.8)"
 ## Input configuration
-gsettings set org.gnome.desktop.input-sources xkb-options "['compose:rctrl', 'ctrl:swapcaps', 'altwin:swap_alt_win']"
+gsettings set org.gnome.desktop.input-sources xkb-options "['compose:rctrl', 'lv3:ralt_switch', 'ctrl:swapcaps', 'altwin:swap_alt_win']"
 ## Workspace configuration
 gsettings set org.gnome.mutter workspaces-only-on-primary true
 gsettings set org.gnome.mutter dynamic-workspaces false
