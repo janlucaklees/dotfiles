@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -x
+set -e
 
 echo "Installing dependencies..."
 doas pacman -S --needed --noconfirm fakeroot
