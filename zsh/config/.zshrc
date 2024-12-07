@@ -19,8 +19,7 @@ ZSH=/usr/share/oh-my-zsh/
 ## ZSH_THEME="bira"
 ## ZSH_THEME="sonicradish"
 ## ZSH_THEME="muse"
-### ZSH_THEME="adben"
-ZSH_THEME="adben"
+ZSH_THEME="jonathan"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
