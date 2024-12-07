@@ -7,6 +7,11 @@ set -x
 yay -S --needed --noconfirm \
     diff-so-fancy
 
+# Setup SSH key
+ssh-keygen -t ed25519 -a 100 -C "email@janlucaklees.de"
+echo "Add this key to GitHub"
+cat $HOME/.ssh/id_ed25519.pub
+
 # Setup Configuration
 ## Name and Email
 git config --global user.name "Jan-Luca Klees"

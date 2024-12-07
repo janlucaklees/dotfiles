@@ -26,9 +26,6 @@ systemctl enable NetworkManager
 echo "Setting up drivers"
 yay -S --needed --noconfirm intel-ucode mesa
 
-echo "Generating SSH key"
-ssh-keygen -t rsa -b 4096 -C "email@janlucaklees.de"
-
 echo "Setting up Git"
 git config --global user.email "email@janlucaklees.de"
 git config --global user.email
