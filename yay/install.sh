@@ -3,7 +3,7 @@
 set -x
 
 echo "Installing dependencies..."
-pacman -S --needed --noconfirm fakeroot
+doas pacman -S --needed --noconfirm fakeroot
 
 echo "Installing yay..."
 git clone https://aur.archlinux.org/yay-bin.git
