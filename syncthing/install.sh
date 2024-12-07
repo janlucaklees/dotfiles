@@ -9,3 +9,5 @@ yay -S --needed --noconfirm \
 
 # Start the service
 systemctl --user enable --now syncthing.service
+
+echo "open http://localhost:8384/"
