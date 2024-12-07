@@ -26,7 +26,7 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 2700
 gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-automatic true
-gsettings set org.gnome.settings-daemon.plugins.color night-light-last-coordinates (51.9, 8.8)
+gsettings set org.gnome.settings-daemon.plugins.color night-light-last-coordinates "(51.9, 8.8)"
 ## Input configuration
 gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:swapcaps', 'altwin:swap_alt_win']"
 ## Workspace configuration
