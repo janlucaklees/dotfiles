@@ -14,10 +14,10 @@ gnome-extensions enable Vitals@CoreCoding.com
 # Install and set configuration
 ## Appearance
 stow -vv -d $(dirname "$0") -t $HOME config
-gsettings set org.gnome.desktop.background picture-uri file:///$HOME/.background.jpg
+gsettings set org.gnome.desktop.background picture-uri "file:///$HOME/.background.jpg"
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer', 'autoclose-xwayland', 'variable-refresh-rate', 'xwayland-native-scaling']"
-gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-gsettings set org.gnome.desktop.interface clock-format '24h'
+gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
+gsettings set org.gnome.desktop.interface clock-format "24h"
 gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.desktop.interface clock-show-date true
 gsettings set org.gnome.desktop.interface clock-show-weekday true
