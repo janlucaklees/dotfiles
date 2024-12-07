@@ -45,8 +45,12 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 "['<Super>8
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-9 "['<Super>9']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-10 "['<Super>0']"
 ## Custom keybindings
+### Shortcut to launch terminal
+gsettings set org.gnome.shell.extensions.forge.keybindings window-swap-last-active "[]"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Super>Return'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'foot'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'Launch Terminal'
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
-gsettings set org.gnome.shell.extensions.arcmenu arcmenu-hotkey ['<Super>space']
+### D-Menu shortcut
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Super>shift']"
+gsettings set org.gnome.shell.extensions.arcmenu arcmenu-hotkey "['<Super>space']"
