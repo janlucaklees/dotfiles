@@ -14,3 +14,4 @@ gnome-extensions enable Vitals@CoreCoding.com
 # Install and set configuration
 stow -vv -d $(dirname "$0") -t $HOME config
 gsettings set org.gnome.desktop.background picture-uri file:///$HOME/.background.jpg
+gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:swapcaps', 'altwin:swap_alt_win']"
