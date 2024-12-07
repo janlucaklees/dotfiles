@@ -3,7 +3,5 @@
 [user]
 	email = email@janlucaklees.de
 	name = Jan-Luca Klees
-[lpull]
-	rebase = false
 [pull]
 	rebase = false
