@@ -12,8 +12,5 @@ yay -S --needed \
     pipewire-jack \
     wireplumber
 
-# Removing no longer needed stuff.
-yay -Rs --noconfirm pulseaudio-alsa
-
 # Start the service
 systemctl --user enable --now pipewire.service pipewire-pulse.service wireplumber.service
