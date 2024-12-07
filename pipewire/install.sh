@@ -4,7 +4,7 @@ set -e
 set -x
 
 # Installing dependencies
-yay -S --needed --noconfirm \
+yay -S --needed \
     pipewire \
     pipewire-audio \
     pipewire-alsa \
