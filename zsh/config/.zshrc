@@ -124,3 +124,6 @@ source /usr/share/autojump/autojump.zsh
 source /usr/share/fzf/key-bindings.zsh
 export FZF_CTRL_T_COMMAND="fd -H" # use fd with hidden files for this command
 
+if [ -f "/usr/share/nvm/init-nvm.sh" ]; then
+  source /usr/share/nvm/init-nvm.sh
+fi
