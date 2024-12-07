@@ -1,12 +1,15 @@
 # Misc
 alias sudo='doas'
 alias cp='cp -v'
+
 alias cat='bat'
 alias cap='bat --plain'
+
 alias ls='eza --group-directories-first'
-alias diff='icdiff'
+
 alias ll='ls -l'
 alias la='ll -lah'
+
 alias grep='rg'
 
 # Systemd
@@ -14,7 +17,6 @@ alias sc='sudo systemctl'
 alias scu='systemctl --user'
 
 # Git aliases
-alias g='git'
 alias gco='git checkout'
 alias gls='git status'
 alias gl='git log --topo-order --stat --pretty=format:"${_git_log_medium_format}"'
