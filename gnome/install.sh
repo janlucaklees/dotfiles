@@ -1,12 +1,30 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
+set -e
+set -x
 
 # Installing all zsh related stuff
-yay -S --needed --noconfirm gnome gnome-extra gnome-shell-extension-pop-shell gnome-shell-extension-vitals
+yay -S --needed --noconfirm \
+    gnome \
+    gnome-extra \
+    gnome-shell-extension-arc-menu \
+    gnome-shell-extension-forge \
+    gnome-shell-extension-gsconnect \
+    gnome-shell-extension-hide-activities-git \
+    gnome-shell-extension-order-icons-git \
+    gnome-shell-extension-vitals
 
-# Install all configuration
+# Enable extensions
+gnome-extensions enable arcmenu@arcmenu.com
+gnome-extensions enable forge@jmmaranan.com
+gnome-extensions enable gsconnect@andyholmes.github.io
+gnome-extensions enable Hide_Activities@shay.shayel.org
+gnome-extensions enable order-extensions@wa4557.github.com
+gnome-extensions enable Vitals@CoreCoding.com
+
+# Install and set configuration
 stow -vv -d $(dirname "$0") -t $HOME config
-# TODO: Have this persisted by a config file that will be symlinked rather than setting it by command.
 gsettings set org.gnome.desktop.background picture-uri file:///$HOME/.background.jpg
 
 # Enable Gnome
-doas systemctl enable gdm
+doas systemctl enable --now gdm
