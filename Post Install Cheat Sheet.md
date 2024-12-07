@@ -64,6 +64,8 @@ Get the dotfiles repo by running: \
 5. Install `keepassxc` to access passwords.
 6. Setup `git` and an SSH key with the included install script. Make sure to add
    the key to GitHub.
+7. Setup Bluetooth with the included install script.
+8. Setup the fingerprint reader with the included install script.
 
 ## Other
 
