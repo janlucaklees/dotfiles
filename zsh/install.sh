@@ -18,7 +18,7 @@ yay -S --needed --noconfirm \
     noto-fonts
 
 # Install Configuration
-rm $HOME/.zshrc
+rm -f $HOME/.zshrc
 stow -vv -d $(dirname "$0") -t $HOME config
 
 # Set zsh as my default shell
