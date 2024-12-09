@@ -27,6 +27,12 @@ gsettings set org.gnome.shell.extensions.forge focus-border-toggle false
 gsettings set org.gnome.shell.extensions.forge tiling-mode-enabled true
 gsettings set org.gnome.shell.extensions.forge window-gap-size 0
 gsettings set org.gnome.shell.extensions.forge auto-split-enabled true
+## Vitals
+gsettings set org.gnome.shell.extensions.vitals alphabetize false
+gsettings set org.gnome.shell.extensions.vitals hide-icons false
+gsettings set org.gnome.shell.extensions.vitals hide-zeros false
+gsettings set org.gnome.shell.extensions.vitals hot-sensors "['_processor_usage_', '_memory_usage_', '_temperature_processor_0_', '__network-rx_max__']"
+gsettings set org.gnome.shell.extensions.vitals position-in-panel 3
 ## Night Light
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 2700
