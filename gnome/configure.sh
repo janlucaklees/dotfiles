@@ -31,7 +31,7 @@ gsettings set org.gnome.shell.extensions.forge auto-split-enabled true
 gsettings set org.gnome.shell.extensions.vitals alphabetize false
 gsettings set org.gnome.shell.extensions.vitals hide-icons false
 gsettings set org.gnome.shell.extensions.vitals hide-zeros false
-gsettings set org.gnome.shell.extensions.vitals hot-sensors "['_processor_usage_', '_memory_usage_', '_temperature_processor_0_', '__network-rx_max__']"
+gsettings set org.gnome.shell.extensions.vitals hot-sensors "['_processor_usage_', '_memory_usage_', '__network-rx_max__', '_temperature_cros_ec_cpu@4c_', '__fan_avg__']"
 gsettings set org.gnome.shell.extensions.vitals position-in-panel 3
 ## Night Light
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
