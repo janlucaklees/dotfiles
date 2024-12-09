@@ -72,15 +72,23 @@ Get the dotfiles repo by running: \
 ### Software
 
 - librewolf / firefox
+  - Make LibreWolf work with KeePassXC
+    In KeePassXC, under Browser Integration -> Advanced, check "Use a custom browser configuration location." You can run an strace for librewolf to see what it's expecting, but this was it for me:
+    ~/.librewolf/native-messaging-hosts/
 - chromium
 - signal-desktop
 - docker
 - docker-compose
 - bun
 - make
+- wl-clipboard
+- AusweisApp (aur/open-ecard-git)
+- Skype
 
 ### Configuration
 
+- Disable debug packages for makgepkg
+  Remove debug from OPTIONS variable
 - Enable pacman parallel downloads
 - Setup systemd-timesyncd
 - Setup etckepper
