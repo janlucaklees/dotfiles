@@ -84,9 +84,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 "[]"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-9 "[]"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-10 "[]"
 ## Arc-Menu
-### Custom Shortcut
-gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Super>shift']"
-gsettings set org.gnome.shell.extensions.arcmenu arcmenu-hotkey "['<Super>space']"
+gsettings set org.gnome.shell.extensions.arcmenu menu-button-appearance 'None'
 gsettings set org.gnome.shell.extensions.arcmenu hide-overview-on-startup true
 gsettings set org.gnome.shell.extensions.arcmenu menu-layout 'Runner'
 gsettings set org.gnome.shell.extensions.arcmenu multi-monitor false
@@ -94,6 +92,9 @@ gsettings set org.gnome.shell.extensions.arcmenu position-in-panel 'Center'
 gsettings set org.gnome.shell.extensions.arcmenu runner-hotkey-open-primary-monitor true
 gsettings set org.gnome.shell.extensions.arcmenu runner-position 'Centered'
 gsettings set org.gnome.shell.extensions.arcmenu show-activities-button false
+### Custom Shortcut
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Super>shift']"
+gsettings set org.gnome.shell.extensions.arcmenu arcmenu-hotkey "['<Super>space']"
 ## Custom keybindings
 ### Shortcut to launch terminal
 gsettings set org.gnome.shell.extensions.forge.keybindings window-swap-last-active "[]"
