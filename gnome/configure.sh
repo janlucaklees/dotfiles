@@ -85,6 +85,12 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7  "['<Super>
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8  "['<Super>8']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-9  "['<Super>9']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-10 "['<Super>0']"
+## Windows and Focus configuration
+gsettings set org.gnome.mutter focus-change-on-pointer-rest true
+gsettings set org.gnome.desktop.wm.preferences focus-mode 'mouse'
+gsettings set org.gnome.desktop.wm.preferences auto-raise true
+gsettings set org.gnome.desktop.wm.preferences auto-raise-delay 0
+gsettings set org.gnome.mutter attach-modal-dialogs false
 ## Arc-Menu
 gsettings set org.gnome.shell.extensions.arcmenu menu-button-appearance 'None'
 gsettings set org.gnome.shell.extensions.arcmenu hide-overview-on-startup true
