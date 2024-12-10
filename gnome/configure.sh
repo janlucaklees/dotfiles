@@ -12,6 +12,8 @@ gnome-extensions enable order-extensions@wa4557.github.com
 gnome-extensions enable Vitals@CoreCoding.com
 
 # Install and set configuration
+# TODO: Never suspend or turn off screen
+# TODO: Setup monitors?
 ## Appearance
 stow -vv -d $(dirname "$0") -t $HOME config
 gsettings set org.gnome.desktop.background picture-uri "file:///$HOME/.background.jpg"
