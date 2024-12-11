@@ -84,6 +84,8 @@ Get the dotfiles repo by running: \
 - wl-clipboard
 - AusweisApp (aur/open-ecard-git)
 - Skype
+- s-tui
+- cups
 
 ### Configuration
 
