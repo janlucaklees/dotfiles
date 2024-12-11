@@ -19,6 +19,8 @@ git config --global user.email "email@janlucaklees.de"
 ## Behavior
 git config --global init.defaultBranch "master"
 git config --global pull.rebase false
+## Set editor
+git config --global core.editor "nvim"
 ## Enable diff-so-fancy
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RF"
 git config --global interactive.diffFilter "diff-so-fancy --patch"
