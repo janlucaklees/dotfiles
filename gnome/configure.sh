@@ -29,6 +29,7 @@ gsettings set org.gnome.shell.extensions.forge focus-border-toggle false
 gsettings set org.gnome.shell.extensions.forge tiling-mode-enabled true
 gsettings set org.gnome.shell.extensions.forge window-gap-size 0
 gsettings set org.gnome.shell.extensions.forge auto-split-enabled true
+gsettings set org.gnome.mutter edge-tiling false
 ## Vitals
 gsettings set org.gnome.shell.extensions.vitals alphabetize false
 gsettings set org.gnome.shell.extensions.vitals hide-icons false
