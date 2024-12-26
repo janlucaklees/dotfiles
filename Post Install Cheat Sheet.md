@@ -86,6 +86,7 @@ Get the dotfiles repo by running: \
 - Skype
 - s-tui
 - cups
+- iio-sensor-proxy
 
 ### Configuration
 
