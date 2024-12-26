@@ -13,7 +13,8 @@ yay -S --needed \
     wireplumber \
     easyeffects \
     calf \
-    lsp-plugins
+    lsp-plugins \
+    libdeep_filter_ladspa-bin
 
 # Start the service
 systemctl --user enable --now pipewire.service pipewire-pulse.service wireplumber.service
