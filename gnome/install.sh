@@ -8,6 +8,7 @@ yay -S --needed --noconfirm \
     gnome \
     gnome-extra \
     gnome-shell-extension-arc-menu \
+    gnome-shell-extension-battery-health-charging-git \
     gnome-shell-extension-forge \
     gnome-shell-extension-gsconnect \
     gnome-shell-extension-hide-activities-git \
