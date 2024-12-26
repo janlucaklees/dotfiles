@@ -10,7 +10,10 @@ yay -S --needed \
     pipewire-alsa \
     pipewire-pulse \
     pipewire-jack \
-    wireplumber
+    wireplumber \
+    easyeffects \
+    calf \
+    lsp-plugins
 
 # Start the service
 systemctl --user enable --now pipewire.service pipewire-pulse.service wireplumber.service
