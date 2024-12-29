@@ -13,6 +13,7 @@ yay -S --needed --noconfirm \
     gnome-shell-extension-gsconnect \
     gnome-shell-extension-hide-activities-git \
     gnome-shell-extension-order-icons-git \
+    gnome-shell-extension-power-profile-switcher-git \
     gnome-shell-extension-vitals \
     foot
 
