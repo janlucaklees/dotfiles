@@ -9,3 +9,5 @@ yay -S --needed --noconfirm \
     framework-laptop-kmod-dkms-git \
     framework-system-git \
     polkit
+
+doas cp config/etc/systemd/system/ectool-charge-limit.service /etc/systemd/system/ectool-charge-limit.service

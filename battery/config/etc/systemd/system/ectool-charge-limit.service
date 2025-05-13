@@ -1,0 +1,14 @@
+[Unit]
+Description=Set battery charge limits with ectool
+After=multi-user.target
+Requires=multi-user.target
+ConditionPathExists=/usr/bin/ectool
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/framework_tool --charge-limit 80
+ExecStart=/usr/bin/ectool chargecontrol normal 40 80
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
