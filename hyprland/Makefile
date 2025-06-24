@@ -9,6 +9,7 @@ install:
 		qt6-wayland \
 		hyprland-qt-support \
 		hyprutils \
+		hypridle \
 		hyprlock \
 		brightnessctl \ # Control screen brightness
 		mako \ # Notifications
