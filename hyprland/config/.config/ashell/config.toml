@@ -1,0 +1,12 @@
+# Show the bar only on the specified output
+outputs = { Targets = ["eDP-1"] }
+
+# Which modules appear where in the status bar
+[modules]
+left = ["Clock"]
+center = []
+right = [["Tray", "Privacy", "Settings"]]
+
+# Clock display format
+[clock]
+format = " %a   %F   %R "
