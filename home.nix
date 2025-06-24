@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./kdeconnect/kdeconnect.nix
     ./zsh/zsh.nix
   ];
 
