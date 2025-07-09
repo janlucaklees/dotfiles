@@ -71,6 +71,12 @@
       zle -N Resume
       bindkey "^Z" Resume
 
+      # Add bun to path
+      export PATH="/home/jlk/.cache/.bun/bin:$PATH"
+
+      # Add meteor to path
+      export PATH="/home/jlk/.meteor/:$PATH"
+
       # EDITOR for git, etc.
       export EDITOR="nvim"
     '';
