@@ -5,8 +5,17 @@ outputs = { Targets = ["eDP-1"] }
 [modules]
 left = ["Clock"]
 center = []
-right = [["Tray", "Privacy", "Settings"]]
+right = [["Privacy", "Tray", "Mako", "Settings"]]
 
 # Clock display format
 [clock]
 format = " %a   %F   %R "
+
+# Mako Do not Disturb toggle
+[[CustomModule]]
+name = "Mako"
+icon = ""
+command = "makoctl mode -t hide"
+listen_cmd = "/home/jlk/.config/ashell/mako_status.sh"
+icons.'hide.*' = ""
+alert = ".*notifications"
