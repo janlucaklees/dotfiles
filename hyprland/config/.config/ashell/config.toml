@@ -5,7 +5,7 @@ outputs = { Targets = ["eDP-1"] }
 [modules]
 left = ["Clock"]
 center = []
-right = [["Privacy", "Tray", "Mako", "Settings"]]
+right = [["Mako", "Privacy", "Tray", "Settings"]]
 
 # Clock display format
 [clock]
