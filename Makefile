@@ -5,5 +5,6 @@ install:
 
 .PHONY: update
 update:
+	yay -Syu
 	hyprpm update
 	nix flake update
