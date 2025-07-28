@@ -12,10 +12,10 @@ exit
 😃 grinning face with big eyes face happy joy haha :D :) smile funny
 😄 grinning face with smiling eyes face happy joy funny haha laugh like :D :) smile
 😁 beaming face with smiling eyes face happy smile joy kawaii
-😆 grinning squinting face happy joy lol satisfied haha face glad XD laugh
+😆 laughing
 😅 grinning face with sweat face hot happy laugh sweat smile relief
 🤣 rolling on the floor laughing face rolling floor laughing lol haha rofl
-😂 face with tears of joy face cry tears weep happy happytears haha
+😂 joy
 🙂 slightly smiling face face smile
 🙃 upside down face face flipped silly smile
 😉 winking face face happy mischievous secret ;) smile eye
@@ -44,7 +44,7 @@ exit
 😐 neutral face indifference meh :| neutral
 😑 expressionless face face indifferent - - meh deadpan
 😶 face without mouth face hellokitty
-😏 smirking face face smile mean prank smug sarcasm
+😏 smirk
 😒 unamused face indifference bored straight face serious sarcasm unimpressed skeptical dubious side eye
 🙄 face with rolling eyes face eyeroll frustrated
 😬 grimacing face face grimace teeth
@@ -114,7 +114,7 @@ exit
 😸 grinning cat with smiling eyes animal cats smile
 😹 cat with tears of joy animal cats haha happy tears
 😻 smiling cat with heart eyes animal love like affection cats valentines heart
-😼 cat with wry smile animal cats smirk
+😼 smirk cat
 😽 kissing cat animal cats kiss
 🙀 weary cat animal cats munch scared scream
 😿 crying cat animal tears weep sad cats upset cry
@@ -186,12 +186,12 @@ exit
 👐 open hands fingers butterfly hands open
 🤲 palms up together hands gesture cupped prayer
 🤝 handshake agreement shake
-🙏 folded hands please hope wish namaste highfive pray
+🙏 pray
 ✍️ writing hand lower left ballpoint pen stationery write compose
 💅 nail polish beauty manicure finger fashion nail
 🤳 selfie camera phone
-💪 flexed biceps arm flex hand summer strong biceps
-🦾 mechanical arm accessibility
+💪 muscle
+🦾 mechanical muscle
 🦿 mechanical leg accessibility
 🦵 leg kick limb
 🦶 foot kick stomp
