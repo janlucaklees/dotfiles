@@ -8,3 +8,6 @@ update:
 	yay -Syu
 	hyprpm update
 	nix flake update
+	fwupdmgr refresh
+	fwupdmgr get-updates
+	fwupdmgr update
