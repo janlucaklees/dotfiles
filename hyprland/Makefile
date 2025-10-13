@@ -11,6 +11,7 @@ install:
 		hyprutils \
 		hypridle \
 		hyprlock \
+		nwg-displays \ # Display settings
 		brightnessctl \ # Control screen brightness
 		mako \ # Notifications
 		ashell \ # Status bar
