@@ -18,7 +18,7 @@ install:
 		hyprpaper \ # Wallpapers
 		power-profiles-daemon \
 		upower \
-		tofi \ # App launcher
+		fzf \ # App launcher
 		smile \ # emoji picker
 		hyprsunset \ # Reduce blue light
 		clight \ # sutomatic screen brightness and color temp

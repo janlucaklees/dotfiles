@@ -1,13 +1,3 @@
-#!/bin/bash
-
-# Thanks: https://github.com/akselaase/tofi-emoji/blob/master/tofi-emoji
-
-emoji=$(sed '1,/^### DATA ###$/d' $0 | tofi "$@" | cut -d ' ' -f 1 | tr -d '\n')
-echo -n $emoji | wtype -
-echo -n $emoji | wl-copy
-exit
-
-### DATA ###
 😀 grinning face face smile happy joy :D grin
 😃 grinning face with big eyes face happy joy haha :D :) smile funny
 😄 grinning face with smiling eyes face happy joy funny haha laugh like :D :) smile
