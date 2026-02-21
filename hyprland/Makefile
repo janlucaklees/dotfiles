@@ -30,6 +30,10 @@ install:
 		grim \
 		slurp \
 		wl-clipboard \
+		tesseract \
+		tesseract-data-eng \
+		tesseract-data-deu \
+		tesseract-data-jpn \
 		libnotify \
 		hyprpicker \
 		overskride # Bluetooth UI
