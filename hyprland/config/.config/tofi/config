@@ -1,6 +1,7 @@
 # Tofi styling to resemble terminal prompt / Hyprland window
-font = monospace
-font-size = 11
+font = Noto Sans Mono
+font-size = 9
+font-features = "tnum"
 prompt-text = "$ "
 
 # Window styling
