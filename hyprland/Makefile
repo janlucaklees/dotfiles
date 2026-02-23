@@ -35,7 +35,7 @@ install:
 		tesseract-data-jpn \
 		libnotify \
 		hyprpicker \
-		overskride # Bluetooth UI
+		overskride \
 		fcitx5-gtk \
 		fcitx5-nord \
 		nwg-look \
