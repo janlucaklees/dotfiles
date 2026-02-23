@@ -79,6 +79,17 @@
 
       # EDITOR for git, etc.
       export EDITOR="nvim"
+
+      # Persist last visited directory for foot launcher.
+      autoload -Uz add-zsh-hook
+      _foot_last_dir_file="''${XDG_CACHE_HOME:-$HOME/.cache}/foot/last-dir"
+
+      _foot_save_cwd() {
+        mkdir -p "''${_foot_last_dir_file:h}" 2>/dev/null || return
+        print -r -- "$PWD" >| "''${_foot_last_dir_file}" 2>/dev/null || true
+      }
+
+      add-zsh-hook chpwd _foot_save_cwd
     '';
 
     history = {
