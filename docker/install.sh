@@ -10,7 +10,7 @@ yay -S --needed --noconfirm \
 
 # Adding myself to the docker group, creating the group if it does not exist
 getent group docker || doas groupadd docker
-doas usermod -a -G docker jlk
+doas usermod -a -G docker "${USER}"
 
 # Start the service
 systemctl enable --now docker.socket
