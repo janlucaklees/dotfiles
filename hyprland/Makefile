@@ -26,7 +26,6 @@ install:
 		bc \
 		hyprsysteminfo \ # System information
 		hyprshot \ # Screenshots
-		jq \
 		grim \
 		slurp \
 		wl-clipboard \
