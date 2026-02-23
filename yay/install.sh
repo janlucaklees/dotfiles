@@ -8,6 +8,7 @@ doas pacman -S --needed --noconfirm fakeroot
 
 echo "Installing yay..."
 rm -rf yay-bin
+trap 'rm -rf yay-bin' EXIT
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si --noconfirm
