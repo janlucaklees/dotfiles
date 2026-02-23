@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+set -euo pipefail
 #
 # This script automatically sets your display’s color temperature via the
 # `hyprsunset` command based on local sunrise and sunset times.

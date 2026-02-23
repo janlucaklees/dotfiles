@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -euo pipefail
 
 while true; do
   mode=$(makoctl mode 2>/dev/null | grep hide)

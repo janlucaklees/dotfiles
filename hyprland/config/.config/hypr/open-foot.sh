@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 
 last_dir_file="${XDG_CACHE_HOME:-$HOME/.cache}/foot/last-dir"

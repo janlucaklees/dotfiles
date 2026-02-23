@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 
 STATE_DIR="${XDG_RUNTIME_DIR:-/run/user/$UID}"

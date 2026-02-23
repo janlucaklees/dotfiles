@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 
 img_path="$(mktemp -t ocrshot-XXXXXX.png)"
