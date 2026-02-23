@@ -50,6 +50,8 @@
       ggi = "git commit";
       ggia = "git commit --amend --no-edit";
       ggiae = "git commit --amend";
+      ggiap = "git commit --amend --patch";
+      ggip = "git commit --patch";
       gri = "git rebase --interactive";
 
       d = "docker";
