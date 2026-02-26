@@ -142,7 +142,7 @@ app_launcher_items() {
   nohup "${BASH_SOURCE[0]}" --revalidate >/dev/null 2>&1 &
 
   while IFS=$'\t' read -r name exec_cmd; do
-    printf '%s\n' "${name}"
+    printf '%s\tapp-launcher:%s\n' "${name}" "${exec_cmd}"
   done < <(app_list)
 }
 

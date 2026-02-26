@@ -99,6 +99,8 @@ selection="$(
     | fzf --print-query \
       --bind "enter:accept" \
       --prompt='> ' \
+      --delimiter=$'\t' \
+      --with-nth=1 \
       --height=100% \
       --layout=reverse
 )" || true
