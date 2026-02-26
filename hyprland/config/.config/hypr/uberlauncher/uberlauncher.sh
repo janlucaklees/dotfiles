@@ -98,11 +98,10 @@ selection="$(
   items_for_query \
     | fzf --print-query \
       --bind "enter:accept" \
-      --exit-0 \
       --prompt='> ' \
       --height=100% \
       --layout=reverse
-)"
+)" || true
 
 query="$(printf "%s\n" "$selection" | sed -n '1p')"
 picked="$(printf "%s\n" "$selection" | sed -n '2p')"
