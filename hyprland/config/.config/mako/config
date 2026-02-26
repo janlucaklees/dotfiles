@@ -1,2 +1,12 @@
+background-color=#2e2e2e
+border-color=#00ff99
+border-size=2
+default-timeout=5000
+icons=1
+group-by=app-name
+padding=12
+height=120
+output=eDP-1
+
 [mode=hide]
 invisible=1
