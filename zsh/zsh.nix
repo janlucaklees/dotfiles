@@ -92,11 +92,16 @@ in
       autoload -Uz add-zsh-hook
       _last_dir_file="''${XDG_CACHE_HOME:-$HOME/.cache}/terminal/last-dir"
 
+      _prompt_spacing() {
+        print
+      }
+
       _save_cwd() {
         mkdir -p "''${_last_dir_file:h}" 2>/dev/null || return
         print -r -- "$PWD" >| "''${_last_dir_file}" 2>/dev/null || true
       }
 
+      add-zsh-hook precmd _prompt_spacing
       add-zsh-hook chpwd _save_cwd
     '';
 
