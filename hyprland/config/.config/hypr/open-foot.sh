@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-last_dir_file="${XDG_CACHE_HOME:-$HOME/.cache}/foot/last-dir"
+last_dir_file="${XDG_CACHE_HOME:-$HOME/.cache}/terminal/last-dir"
 start_dir="${HOME}"
 
 if [[ -r "${last_dir_file}" ]]; then

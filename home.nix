@@ -1,13 +1,13 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports = [
-    ./kdeconnect/kdeconnect.nix
     ./zsh/zsh.nix
+    ./kdeconnect/kdeconnect.nix
   ];
 
   home.username = "jlk";
-  home.homeDirectory = "/home/jlk";
+  home.homeDirectory = if pkgs.stdenv.isDarwin then "/Users/jlk" else "/home/jlk";
   home.stateVersion = "24.11";
   home.sessionPath = [ "$HOME/.nix-profile/bin" ];
 
