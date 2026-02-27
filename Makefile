@@ -16,10 +16,12 @@ endif
 .PHONY: install
 install:
 ifeq ($(UNAME_S),Darwin)
-	# macOS: Just apply home-manager
+	# macOS: Install stow and apply home-manager
+	brew install stow
 	nix run home-manager/release-24.11 -- switch --flake .#$(HM_CONFIG)
 else
-	# Linux: Reload Hyprland plugins and apply home-manager
+	# Linux: Install stow, reload Hyprland plugins and apply home-manager
+	yay -S --needed --noconfirm stow
 	hyprpm reload
 	nix run home-manager/release-24.11 -- switch --flake .#$(HM_CONFIG)
 endif
