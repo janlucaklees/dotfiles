@@ -1,5 +1,9 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
+let
+  isLinux = pkgs.stdenv.isLinux;
+  isDarwin = pkgs.stdenv.isDarwin;
+in
 {
   home.packages = with pkgs; [
     nix
@@ -9,6 +13,8 @@
     ripgrep
     autojump
     fzf
+  ] ++ lib.optionals isLinux [
+    # Fonts are handled differently on macOS
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
@@ -28,8 +34,6 @@
     };
 
     shellAliases = {
-      sudo = "doas";
-
       cat = "bat";
       cap = "bat --plain";
       ls = "eza --group-directories-first";
@@ -37,9 +41,6 @@
       la  = "ll -lah";
       cp = "cp -v";
       grep = "rg";
-
-      sc  = "sudo systemctl";
-      scu = "systemctl --user";
 
       gco = "git checkout";
       gls = "git status";
@@ -56,6 +57,11 @@
 
       d = "docker";
       dc = "docker compose";
+    } // lib.optionalAttrs isLinux {
+      # Linux-only aliases
+      sudo = "doas";
+      sc = "sudo systemctl";
+      scu = "systemctl --user";
     };
 
     initExtra = ''
@@ -73,25 +79,25 @@
       zle -N Resume
       bindkey "^Z" Resume
 
-      # Add bun to path
-      export PATH="/home/jlk/.cache/.bun/bin:$PATH"
+      # Add bun to path if it exists
+      [[ -d "$HOME/.cache/.bun/bin" ]] && export PATH="$HOME/.cache/.bun/bin:$PATH"
 
-      # Add meteor to path
-      export PATH="/home/jlk/.meteor/:$PATH"
+      # Add meteor to path if it exists
+      [[ -d "$HOME/.meteor" ]] && export PATH="$HOME/.meteor:$PATH"
 
       # EDITOR for git, etc.
       export EDITOR="nvim"
 
-      # Persist last visited directory for foot launcher.
+      # Persist last visited directory for terminal launcher
       autoload -Uz add-zsh-hook
-      _foot_last_dir_file="''${XDG_CACHE_HOME:-$HOME/.cache}/foot/last-dir"
+      _last_dir_file="''${XDG_CACHE_HOME:-$HOME/.cache}/terminal/last-dir"
 
-      _foot_save_cwd() {
-        mkdir -p "''${_foot_last_dir_file:h}" 2>/dev/null || return
-        print -r -- "$PWD" >| "''${_foot_last_dir_file}" 2>/dev/null || true
+      _save_cwd() {
+        mkdir -p "''${_last_dir_file:h}" 2>/dev/null || return
+        print -r -- "$PWD" >| "''${_last_dir_file}" 2>/dev/null || true
       }
 
-      add-zsh-hook chpwd _foot_save_cwd
+      add-zsh-hook chpwd _save_cwd
     '';
 
     history = {

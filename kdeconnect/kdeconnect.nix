@@ -1,6 +1,7 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
-{
+# KDE Connect only works on Linux
+lib.mkIf pkgs.stdenv.isLinux {
   home.packages = with pkgs; [
     plasma5Packages.kdeconnect-kde
     plasma5Packages.kde-cli-tools
