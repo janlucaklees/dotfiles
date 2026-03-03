@@ -21,7 +21,7 @@ ifeq ($(UNAME_S),Darwin)
 		brew install stow; \
 	fi
 	@if ! command -v nix >/dev/null 2>&1; then \
-		sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install); \
+		curl --proto '=https' --tlsv1.2 -sSf -L https://nixos.org/nix/install | sh; \
 	fi
 	nix run home-manager/release-24.11 -- switch --flake .#$(HM_CONFIG)
 else
