@@ -23,15 +23,14 @@ ifeq ($(UNAME_S),Darwin)
 	@if ! command -v nix >/dev/null 2>&1; then \
 		curl --proto '=https' --tlsv1.2 -sSf -L https://nixos.org/nix/install | sh; \
 	fi
-	nix run home-manager/release-24.11 -- switch --flake .#$(HM_CONFIG)
 else
 	# Linux: Install stow, reload Hyprland plugins and apply home-manager
 	@if ! command -v stow >/dev/null 2>&1 || ! command -v nix >/dev/null 2>&1; then \
 		yay -S --needed --noconfirm stow nix; \
 	fi
 	hyprpm reload
-	nix run home-manager/release-24.11 -- switch --flake .#$(HM_CONFIG)
 endif
+	nix run home-manager/release-24.11 -- switch --flake .#$(HM_CONFIG)
 
 .PHONY: update
 update:
