@@ -29,7 +29,7 @@ in
 
     oh-my-zsh = {
       enable = true;
-      theme = "strug";
+      theme = "fino-time";
       plugins = [ "git" "autojump" "fzf" ];
     };
 
