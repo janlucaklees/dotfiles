@@ -1,12 +1,6 @@
-{ config, pkgs, lib, ... }:
+{ pkgs, ... }:
 
 {
-  imports = [
-    ./zsh/zsh.nix
-    ./neovim/neovim.nix
-    ./kdeconnect/kdeconnect.nix
-  ];
-
   home.username = "jlk";
   home.homeDirectory = if pkgs.stdenv.isDarwin then "/Users/jlk" else "/home/jlk";
   home.stateVersion = "24.11";

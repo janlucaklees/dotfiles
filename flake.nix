@@ -9,19 +9,31 @@
 
   outputs = { nixpkgs, home-manager, ... }:
     let
-      # Helper function to create home configuration for a system
-      mkHomeConfiguration = system: home-manager.lib.homeManagerConfiguration {
+      mkHomeConfiguration = { system, profile }: home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs { inherit system; };
-        modules = [ ./home.nix ];
+        modules = [ ./home-common.nix profile ];
       };
     in {
       homeConfigurations = {
         # Linux configuration
-        "MiniPluginBaby" = mkHomeConfiguration "x86_64-linux";
-        
+        "MiniPluginBaby" = mkHomeConfiguration {
+          system = "x86_64-linux";
+          profile = ./home-linux.nix;
+        };
+        "MiniPluginBaby-headless" = mkHomeConfiguration {
+          system = "x86_64-linux";
+          profile = ./home-headless.nix;
+        };
+
         # macOS configurations
-        "MiniPluginBaby-mac" = mkHomeConfiguration "aarch64-darwin";
-        "MiniPluginBaby-mac-intel" = mkHomeConfiguration "x86_64-darwin";
+        "MiniPluginBaby-mac" = mkHomeConfiguration {
+          system = "aarch64-darwin";
+          profile = ./home-mac.nix;
+        };
+        "MiniPluginBaby-mac-intel" = mkHomeConfiguration {
+          system = "x86_64-darwin";
+          profile = ./home-mac-intel.nix;
+        };
       };
     };
 }
