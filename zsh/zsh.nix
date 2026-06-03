@@ -13,6 +13,8 @@ in
     ripgrep
     autojump
     fzf
+    dust
+    procs
   ] ++ lib.optionals isLinux [
     # Fonts are handled differently on macOS
     noto-fonts
@@ -41,6 +43,8 @@ in
       la  = "ll -lah";
       cp = "cp -v";
       grep = "rg";
+      du = "dust";
+      ps = "procs";
 
       gco = "git checkout";
       gls = "git status";
