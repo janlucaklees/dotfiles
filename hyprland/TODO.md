@@ -1,6 +1,4 @@
-- [ ] Create script for hyprsunset, run with exec-once
 - [ ] kanshi - Auto-manage monitors (dock/undock laptop → auto layouts).
-- [ ] Screenshots with ocr
 - [ ] starship??? - Minimal, fast, pretty shell prompt for zsh/fish/bash.
 - [ ] helix - Newer, modal editor like vim but with batteries included (good if you want less config overhead).
 - [ ] nixd - LSP server for editing Nix files (really nice once you start tweaking flakes a lot).

@@ -2,6 +2,8 @@
 
 High-leverage improvements to make new-system setup faster, more reliable, and more complete.
 
+Add code to setup nix (service and path to run home-manager).
+
 ## Bootstrap & Reliability
 - Add a single `bootstrap` entry point that installs prerequisites (git, stow, doas), clones the repo, bootstraps `yay`, and runs module installs in a sane order.
 - Provide a `--dry-run` or `--check` mode that validates prerequisites (network, doas config, AUR access, and required commands) before running any install steps.
