@@ -38,9 +38,9 @@ in
     shellAliases = {
       cat = "bat";
       cap = "bat --plain";
-      ls = "eza --group-directories-first";
-      ll = "ls -l";
-      la  = "ll -lah";
+      ls = "eza -l --group-directories-first";
+      la  = "ls -lah";
+      tree = "eza --tree";
       cp = "cp -v";
       grep = "rg";
       du = "dust";
@@ -58,6 +58,8 @@ in
       ggiap = "git commit --amend --patch";
       ggip = "git commit --patch";
       gri = "git rebase --interactive";
+      gsp = "git stash push -m";
+      gsl = "git stash list --pretty=format:\"%C(yellow)%gd%Creset %Cgreen%cr%Creset %s\"";
 
       d = "docker";
       dc = "docker compose";
