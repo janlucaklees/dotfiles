@@ -21,7 +21,6 @@ install:
 		fzf \ # App launcher
 		smile \ # emoji picker
 		hyprsunset \ # Reduce blue light
-		clight \ # sutomatic screen brightness and color temp
 		jq \
 		bc \
 		hyprsysteminfo \ # System information
