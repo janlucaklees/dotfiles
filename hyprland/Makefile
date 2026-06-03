@@ -40,7 +40,8 @@ install:
 		nwg-look \
 		nordic-theme \
 		papirus-icon-theme \
-		superfile
+		nautilus \
+
 
 		# Cursor
 		yay -S --needed --noconfirm \
