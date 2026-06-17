@@ -1,0 +1,68 @@
+# UberLauncher default configuration.
+#
+# This file is copied to the user config path on first run. Skills are enabled
+# by default; set enabled = false for any skill you do not want loaded.
+
+
+[general]
+# No general config yet.
+
+[statusbar]
+# Configure the status bar displayed at the top of the launcher.
+# Use {key} placeholders to insert live values supplied by skills.
+# enabled = false
+#
+left   = "{{time}}"
+center = ""
+right  = "{{power:icon}} {{notification:icon}} {{bluetooth:icon}} {{wifi:icon}} {{battery:icon}} {{battery:percentage}}%"
+
+[skills.apps]
+# enabled = false
+
+[skills.battery]
+# enabled = false
+
+[skills.clock]
+# enabled = false
+
+# Time format using Go's reference time: Mon Jan 2 15:04:05 MST 2006
+# Examples: "15:04" (default), "3:04 PM", "15:04:05", "Mon 15:04"
+format = "Mon 2006-01-02 15:04"
+
+[skills.search]
+# enabled = false
+
+# Use {{query}} where the URL-escaped search query should be inserted.
+url = "https://search.brave.com/search?q={{query}}"
+
+# Common search URL examples:
+# Google:      "https://www.google.com/search?q={{query}}"
+# DuckDuckGo:  "https://duckduckgo.com/?q={{query}}"
+# Brave:       "https://search.brave.com/search?q={{query}}"
+# Startpage:   "https://www.startpage.com/sp/search?query={{query}}"
+
+# Command used to open the generated search URL.
+# Use {{url}} where the URL-escaped search query should be inserted.
+# command = ["xdg-open", "{{url}}"]
+
+[skills.system]
+# enabled = false
+
+[skills.todoist]
+# enabled = false
+
+# Todoist API token for quick add.
+token = "2e62a32250e7b9aedc3fa577da4ebc68e27c68e9"
+
+[skills.wifi]
+# enabled = false
+
+[skills.custom]
+enabled = false
+
+# Define custom launcher entries as sub-tables.
+# Each sub-table becomes one entry; label and command are required.
+#
+# [skills.custom.example]
+# label = "my custom action"
+# command = "xdg-open https://github.com/janlucaklees/uberlauncher#Troubleshooting"
