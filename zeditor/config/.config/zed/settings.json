@@ -1,0 +1,144 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `zed: Open Default Settings` command
+// from the command palette
+{
+  "autosave": "on_focus_change",
+  "focus_follows_mouse": {
+     "enabled": true,
+   },
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+  "vim_mode": false,
+  "wrap_guides": [100],
+  "drop_target_size": 0.3,
+  "ssh_connections": [
+    {
+      "host": "cloud.janlucaklees.de",
+      "username": "jlk",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/jlk/./"
+          ]
+        },
+        {
+          "paths": [
+            "/home/jlk/renaissance/./"
+          ]
+        },
+        {
+          "paths": [
+            "~/CloudBaby"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "streamingbaby",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/jlk"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "streamingbaby",
+      "args": [],
+      "projects": []
+    },
+    {
+      "host": "cloud.janlucaklees.de",
+      "args": [],
+      "projects": []
+    },
+    {
+      "host": "storagebaby",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/jlk"
+          ]
+        },
+        {
+          "paths": [
+            "/home/jlk/StorageBaby"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "storagebaby",
+      "args": [],
+      "projects": []
+    }
+  ],
+  "ui_font_size": 15,
+  "buffer_font_size": null,
+
+  "tab_size": 2,
+  "show_whitespaces": "all",
+
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+  "languages": {
+    "Python": {
+      "formatter": {
+        "language_server": {
+          "name": "black"
+        }
+      }
+    }
+  }
+}
+}
