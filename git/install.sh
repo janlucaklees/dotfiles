@@ -19,6 +19,7 @@ git config --global user.email "email@janlucaklees.de"
 ## Behavior
 git config --global init.defaultBranch "master"
 git config --global pull.rebase false
+git config --global push.autoSetupRemote true
 ## Set editor
 git config --global core.editor "nvim"
 ## Enable diff-so-fancy
